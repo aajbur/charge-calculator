@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charge Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Charge Calculator</h1>
+
+    <div id="calculator">
+        <select id="offenseSelect">
+            <option value="">--Select Offense--</option>
+        </select>
+        <button onclick="addOffense()">Add Offense</button>
+
+        <table id="offenseTable">
+            <thead>
+                <tr>
+                    <th>Offense</th>
+                    <th>Fine ($)</th>
+                    <th>Jail Time (Months)</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>Total</td>
+                    <td id="totalFine">0</td>
+                    <td id="totalJail">0</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
