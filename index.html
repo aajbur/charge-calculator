@@ -10,6 +10,7 @@
     <h1>Charge Calculator</h1>
 
     <div id="calculator">
+        <input type="text" id="searchInput" placeholder="Search offense..." onkeyup="filterOffenses()">
         <select id="offenseSelect">
             <option value="">--Select Offense--</option>
         </select>
@@ -21,6 +22,7 @@
                     <th>Offense</th>
                     <th>Fine ($)</th>
                     <th>Jail Time (Months)</th>
+                    <th>Action</th>
                 </tr>
             </thead>
             <tbody>
@@ -30,6 +32,7 @@
                     <td>Total</td>
                     <td id="totalFine">0</td>
                     <td id="totalJail">0</td>
+                    <td></td>
                 </tr>
             </tfoot>
         </table>
